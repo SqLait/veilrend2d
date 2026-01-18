@@ -1,6 +1,10 @@
 #pragma once
-#include "core/components/vtransform.hpp"
+#include <string>
 
 class Object {
-    VTransform transform;
+protected:
+    std::string name;
+public:
+    Object(const char *_name);
+    Object clone();
 };

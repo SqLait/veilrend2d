@@ -7,9 +7,9 @@ class SceneManager {
     std::vector<Scene> scenes;
     Scene &current_scene;
 public:
-    explicit SceneManager(std::span<Scene> scenes);
-    void update(f32 delta_time);
+    explicit SceneManager(std::span<Scene> _scenes);
+    void update(f32 _delta_time);
     void draw();
 
-    void switch_scene(i32 index);
+    void switch_scene(i32 _index);
 };

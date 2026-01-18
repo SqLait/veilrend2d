@@ -2,4 +2,5 @@
 
 struct IDrawable {
     virtual void draw();
+    virtual ~IDrawable();
 };

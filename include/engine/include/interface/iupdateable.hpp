@@ -2,5 +2,6 @@
 #include <types.hpp>
 
 struct IUpdateable {
-    virtual void update(f32 delta_time);
+    virtual void update(f32 _time);
+    virtual ~IUpdateable();
 };

@@ -5,6 +5,11 @@ target_sources(engine
         src/window.cpp
         src/scenemanager.cpp
         src/scene.cpp
+        src/gameobject.cpp
+        src/object.cpp
+        src/vtransform.cpp
+        src/idrawable.cpp
+        src/iupdateable.cpp
 )
 
 target_include_directories(engine
