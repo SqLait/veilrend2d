@@ -26,6 +26,10 @@ clean:
     mkdir build
     just init
 
+[group('test')]
+test:
+    echo "Does not work yet"
+
 # Creates a release binary 
 [group('publish')]
 release:
