@@ -2,7 +2,6 @@ add_library(engine STATIC)
 
 target_sources(engine
         PUBLIC
-        src/program.cpp
         src/window.cpp
 )
 

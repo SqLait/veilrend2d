@@ -1,16 +1,20 @@
 #include <raylib.h>
 #include <engine/window.hpp>
+#include "program.hpp"
 
 int main() {
     Window window(800, 450, "basic window");
+    init();
 
     while (!WindowShouldClose()) {
+        update();
+
         BeginDrawing();
-        ClearBackground(Color(0, 170, 255, 0));
-
-
+        draw();
         EndDrawing();
     }
+
+    deinit();
 
     return 0;
 }
