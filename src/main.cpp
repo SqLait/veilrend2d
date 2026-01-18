@@ -1,5 +1,5 @@
 #include <raylib.h>
-#include <engine/window.hpp>
+#include <core/window.hpp>
 #include "program.hpp"
 
 int main() {
@@ -8,7 +8,6 @@ int main() {
 
     while (!WindowShouldClose()) {
         update();
-
         BeginDrawing();
         draw();
         EndDrawing();
