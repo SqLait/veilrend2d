@@ -23,7 +23,6 @@ build:
 [group('build')]
 clean:
     rm -rf build
-    mkdir build
     just init
 
 [group('test')]
