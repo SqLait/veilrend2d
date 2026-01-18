@@ -4,6 +4,7 @@ target_sources(engine
         PUBLIC
         src/window.cpp
         src/scenemanager.cpp
+        src/scene.cpp
 )
 
 target_include_directories(engine
