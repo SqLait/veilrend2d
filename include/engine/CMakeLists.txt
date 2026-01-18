@@ -3,6 +3,7 @@ add_library(engine STATIC)
 target_sources(engine
         PUBLIC
         src/window.cpp
+        src/scenemanager.cpp
 )
 
 target_include_directories(engine

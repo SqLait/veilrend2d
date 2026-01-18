@@ -1,4 +1,4 @@
-#include <engine/window.hpp>
+#include <core/window.hpp>
 #include <raylib.h>
 
 Window::Window(i16 width, i16 height, const char *title) {
