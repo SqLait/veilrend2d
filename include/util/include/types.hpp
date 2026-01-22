@@ -18,3 +18,5 @@ using f32 = float;
 using f64 = double;
 
 using byte = u8;
+
+using Entity = u32;
