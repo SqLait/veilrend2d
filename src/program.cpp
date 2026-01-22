@@ -43,7 +43,7 @@ std::vector<i32> sparse;
 
 void add(Entity e, Vector2 vec) {
     if (e >= sparse.size())
-        sparse.resize(e + 1, UINT32_MAX);
+        sparse.resize(e + 1, INT32_MAX);
 
     sparse[e] = dense.size();
     dense.push_back(e);
