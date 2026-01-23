@@ -1,13 +1,8 @@
 #pragma once
+#include "game.hpp"
 #include <types.hpp>
 
-class Program {
-public:
-    Program();
-    ~Program();
-};
-
-void init();
+void init(Game &game);
 void update();
 void draw();
 void deinit();

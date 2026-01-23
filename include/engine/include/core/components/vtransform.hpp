@@ -3,16 +3,14 @@
 #include "raymath.h"
 #include <types.hpp>
 
-class VTransform {
+struct VTransform {
     Vector2 position;
     Vector2 scale;
     Vector2 origin;
     f32 rotation;
 
-public:
     VTransform(Vector2 _position = Vector2Zero(), Vector2 _scale = Vector2One(),
                Vector2 _origin = Vector2Zero(), f32 _rotation = 0);
-
     void translate(Vector2 _position);
     void set_position(Vector2 _position);
     void rotate_around(f32 _radian);
