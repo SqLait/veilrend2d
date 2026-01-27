@@ -3,20 +3,23 @@
 #include "core/scenes/scenemanager.hpp"
 #include "game.hpp"
 #include "program.hpp"
+#include "scenes/testscene.hpp"
 
 int main() {
     Window window(800, 450, "basic window");
     Game game(&window);
+    TestScene s;
+    game.scene_mg.add_scene(&s);
     init(game);
 
     while (!WindowShouldClose()) {
-        update();
+        update(game);
         BeginDrawing();
-        draw();
+        draw(game);
         EndDrawing();
     }
 
-    deinit();
+    deinit(game);
 
     return 0;
 }

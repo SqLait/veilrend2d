@@ -5,6 +5,8 @@ struct Entity {
     VTransform transform;
     Texture2D texture;
 
-    Entity(VTransform _transform, string _path);
+    Entity(VTransform _transform, Texture _texture);
     ~Entity();
 };
+
+u32 new_entity();

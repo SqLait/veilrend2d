@@ -11,6 +11,7 @@ add_executable(main
     src/main.cpp
     src/program.cpp
     src/game.cpp
+    src/scenes/testscene.cpp
 )
 
 target_compile_options(main PRIVATE

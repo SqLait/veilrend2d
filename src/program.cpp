@@ -7,14 +7,18 @@
 
 void init(Game &game) {
     SetTargetFPS(60);
+    game.scene_mg.init();
 }
 
-void update() {
+void update(Game &game) {
+    game.scene_mg.update(GetFrameTime());
 }
 
-void draw() {
+void draw(Game &game) {
     ClearBackground(Color(0, 170, 255, 0));
+    game.scene_mg.draw();
 }
 
-void deinit() {
+void deinit(Game &game) {
+    game.scene_mg.deinit();
 }

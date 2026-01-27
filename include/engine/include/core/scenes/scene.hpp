@@ -5,5 +5,8 @@
 struct Scene {
     std::vector<Entity> entities;
 
-    Scene(std::vector<Entity> _entities);
+    virtual void init() = 0;
+    virtual void update(f32 time) = 0;
+    virtual void draw() = 0;
+    virtual void deinit() = 0;
 };

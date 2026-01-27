@@ -4,7 +4,6 @@ target_sources(engine
         PUBLIC
         src/entity.cpp
         src/physicssystem.cpp
-        src/scene.cpp
         src/scenemanager.cpp
         src/vtransform.cpp
         src/window.cpp

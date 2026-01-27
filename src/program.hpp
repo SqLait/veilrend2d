@@ -3,6 +3,6 @@
 #include <types.hpp>
 
 void init(Game &game);
-void update();
-void draw();
-void deinit();
+void update(Game &game);
+void draw(Game &game);
+void deinit(Game &game);

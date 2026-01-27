@@ -4,5 +4,5 @@
 #include <vector>
 
 struct PhysicsSystem {
-    void apply_gravity(std::vector<Vector2> &positions, f32 gravity);
+    static void apply_gravity(std::vector<Vector2> &positions, f32 gravity);
 };
