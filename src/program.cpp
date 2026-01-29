@@ -1,5 +1,6 @@
 #include "program.hpp"
-#include "core/entity.hpp"
+#include "ecs/entity.hpp"
+#include "ecs/componentpool.hpp"
 #include "raylib.h"
 #include "types.hpp"
 #include <types.hpp>

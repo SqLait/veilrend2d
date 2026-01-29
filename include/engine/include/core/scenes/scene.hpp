@@ -1,5 +1,5 @@
 #pragma once
-#include "core/entity.hpp"
+#include "ecs/entity.hpp"
 #include <vector>
 
 struct Scene {
